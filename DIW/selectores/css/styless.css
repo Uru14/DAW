@@ -1,0 +1,32 @@
+table{
+    border-collapse: collapse;
+    color: #333;
+    font-family: Arial;
+}
+th, tr, td {
+    border: 1px solid ;
+    color: black;
+    text-align: center;
+    padding: 5px;
+
+}
+.tipo > th{
+    background-image: url("../imagenes/fondo_gris.gif");
+}
+
+.moneda {
+	padding-left: 0;
+    background-color: #E6F3FF;
+}
+
+th img {
+    float: left;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFCC;
+}
+
+tr:hover {
+    background-color: #FFFF66;
+}
