@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+
+.flex-container{
+    display: flex;
+    background-color: rgb(233, 233, 170);
+    padding: 10px;
+    border: 2px black solid;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+}
+
+
+.martillo1 {
+    position:relative;
+    width:110px;
+    height:190px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;     
+    z-index: 1000;   
+}
+
+
+.golpe {
+    transition: all .3s;
+    transform: rotate(90deg);
+}
+
+
+
+.voltereta{
+    animation: rotation 2s infinite linear;
+}
+
