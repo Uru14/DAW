@@ -1,0 +1,78 @@
+form {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 2px 0;
+    border-color: #888;
+    width: 710px;
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(0,0,0, 0.2);
+    background-image: url("../imgs/bg-form.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+label {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: LeagueGothic;
+}
+h1{
+    font-size: 2em;
+    padding-bottom: 20px;
+    background:
+            url("../imgs/bg-formtitle-left.png") left  no-repeat,
+            url("../imgs/bg-formtitle-right.png") right no-repeat;
+    background-size: 100px auto;
+    font-family: AcknoeledgementMedium;
+}
+
+#registro-submit {
+    border: none;
+    border-radius: 3px;
+    background: radial-gradient(circle, rgb(144,144,144), rgb(72,72,72));
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    padding: 5px 80px;
+    opacity: 80%;
+    font-family: Tahoma, Geneva, sans-serif;
+    transition: opacity 0.25s linear;
+}
+#registro-submit:hover {
+    opacity: 100%;
+}
+
+input:required {
+    background-image: url("../imgs/required.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 15px;
+}
+
+input:focus:valid {
+    background-image: url("../imgs/valid.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 15px;
+}
+input:focus:invalid {
+    background-image: url("../imgs/invalid.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 15px;
+}
+
+::selection{
+    background-color: #484848;
+    color: #fff;
+    text-shadow: none;
+}
