@@ -1,3 +1,15 @@
+@font-face {
+    font-family: LeagueGothic;
+    src: url(../fonts/LeagueGothic-Regular-VariableFont_wdth.ttf);
+
+}
+
+@font-face {
+    font-family: AcknowledgementMedium;
+    src: url(../fonts/Acknowledgement.otf);
+
+}
+
 form {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -23,7 +35,7 @@ label {
     display: block;
     margin: auto;
     text-align: center;
-    font-family: LeagueGothic;
+    font-family: 'LeagueGothic', serif;
 }
 h1{
     font-size: 2em;
@@ -32,12 +44,12 @@ h1{
             url("../imgs/bg-formtitle-left.png") left  no-repeat,
             url("../imgs/bg-formtitle-right.png") right no-repeat;
     background-size: 100px auto;
-    font-family: AcknoeledgementMedium;
+    font-family: 'AcknowledgementMedium', serif;
 }
 
 #registro-submit {
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     background: radial-gradient(circle, rgb(144,144,144), rgb(72,72,72));
     color: white;
     font-size: 2em;
@@ -69,6 +81,19 @@ input:focus:invalid {
     background-repeat: no-repeat;
     background-position: right;
     background-size: 15px;
+}
+input{
+    padding-top: 10px;
+    background: none;
+    border: none;
+    width: 300px;
+    border-bottom: #6b6b6b dotted 1px;
+    text-align: center;
+    outline: none;
+}
+
+p {
+    font-size: 0.75em;
 }
 
 ::selection{
