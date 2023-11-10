@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de HTML5 y CSS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+<div id="page">
+
+    <header>
+        <h1><img src="imgs/logo.png">Curso de HTML5 y CSS3</h1>
+    </header>
+
+    <div id="nav">
+        <ul>
+            <li id="nav_content"><a href="index.html">Contenidos</a></li>
+            <li id="nav_videos"><a href="videos.html">Vídeos</a>
+                <div class="dropdown-content">
+                    <a href="videos.html">Vídeos 1</a>
+                    <a href="videos.html">Vídeos 2</a>
+                    <a href="videos.html">Vídeos 3</a>
+                </div>
+            </li>
+            <li id="nav_contact"><a href="">Contacto</a></li>
+        </ul>
+    </div>
+
+
+    <main>
+        <div>
+            <h1>Contáctenos</h1>
+            <form id="contenedorFormulario">
+                <input type="text" required placeholder="Escriba su nombre">
+                <input type="email" required placeholder="Escriba su email">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required placeholder="Su mensaje..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <a href=""></a>
+        <p>HTML5 y CSS3</p>
+        <p>Diseño de interfaces web - 2DAW</p>
+    </footer>
+
+</div>
+</body>
+</html>

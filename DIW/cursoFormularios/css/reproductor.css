@@ -1,0 +1,50 @@
+#barra
+{
+    width: 705px;
+    margin:5px;
+    height: 16px;
+    padding: 2px;
+    border: 1px solid #CCCCCC;
+    background: #EEEEEE;
+}
+#progreso
+{
+    position: absolute;
+    width: 0;
+    height: 16px;
+    background: rgba(0,0,150,.2);
+}
+
+#reproductor {
+    width:720px;
+    float:left;
+    border: 5px solid rgb(87, 83, 83);
+    border-radius: 5px;
+    margin: 20px 10px 20px 20px;
+}
+
+main {
+    width:1120px;
+    text-align:center;
+    background-color: white;
+}
+
+nav{
+    width:100px;
+    float:right;
+    margin: 20px 210px 0 0;
+}
+
+nav input {
+    border-radius: 8px;
+    padding:10px;
+    margin:5px;
+    width:90px;
+    height:40px;
+    background-color: #fc5518;
+    color: white;
+}
+
+nav input:hover {
+    background-color: rgb(201, 156, 93);
+}

@@ -1,0 +1,67 @@
+main {
+    background-image: url("../imgs/fondoForm.jpg");
+    justify-content: center;
+}
+
+main div {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+    width: 600px;
+    padding: 20px 50px 20px 50px;
+    background-color: rgba(200,200,200, 0.7);
+    justify-content: left;
+    box-shadow: 3px 0 8px rgba(0,0,0, 0.4);
+}
+
+h1 {
+    position: absolute;
+    top: -16px;
+    left: 490px;
+    background-color: rgba(255,255,255,0.7);
+    font-family: "AguafinaScript-Regular", sans-serif ;
+    font-style: oblique;
+    color: #333;
+    letter-spacing: 5px;
+    text-shadow: 0 0 2px #777;
+    padding: 0 10px 0 10px;
+}
+
+form input, form textarea {
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.1) inset;
+    color: black;
+    font-weight: bold;
+    padding: 1px 4px 1px 45px;
+    margin-bottom: 10px;
+    transition: 0.4s all ease-in;
+}
+
+form input {
+    height: 32px;
+    width: 330px;
+
+}
+
+form input:focus {
+    width: 370px;
+    box-shadow: 0 0 12px rgb(255,255,255);
+}
+
+input:nth-child(1) {
+    background-image: url("../imgs/icon-nombre.png");
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+input:nth-child(2) {
+    background-image: url("../imgs/icon-correo.png");
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+form input:focus:valid {
+    background-image: url("../imgs/valid.png");
+    background-repeat: no-repeat;
+    /*left: 390px;*/
+}
