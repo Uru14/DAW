@@ -1,0 +1,6 @@
+#coche {
+    animation-duration: 3s;
+    animation-name: animacionCoche;
+    animation-iteration-count: 1;
+    position:relative;
+}
