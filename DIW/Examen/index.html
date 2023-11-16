@@ -2,60 +2,69 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Espornets</title>
+    <title>ESPORNETS - Calzado Deportivo</title>
 </head>
 <body>
-
-<div id="page">
+    
     <header>
-        <h1>ESPORNETS</h1>
+        <div class="header-content">
+            <img src="imgs/espornets.png" alt="ESPORNETS Logo">
+            <h1>ESPORNETS</h1>
+        </div>
     </header>
 
-    <div id="nav">
+    <nav>
         <ul>
-            <li id="nav_hombre">Hombre</a>
-                <div class="dropdown-content">
-                    <a href="hombre.html">Productos</a>
-                </div>
-            </li>
-            <li id="nav_mujer">Mujer</a>
-                <div class="dropdown-content">
-                    <a href="mujer.html">Productos</a>
-                </div>
+            <li><a href="#productos">Productos</a>
+                <ul>
+                    <li><a href="hombre.html">Hombre</a></li>
+                    <li><a href="mujer.html">Mujer</a></li>
+                </ul>
             </li>
         </ul>
-    </div>
+    </nav>
 
-    <main>
-        <div class="article">
-            <div class="article_header">
-                <img src="imgs/hombre.png">
-                <h2>Hombre</h2>
-                <hr>
-            </div>
-            <p> Explora nuestra gama de calzado deportivo para hombre. Diseño y funcionalidad para
-                todas tus actividades.</p>
-
+    <section id="productos">
+        <div class="seccion-mujer">
+            <a href="mujer.html">
+                <img src="imgs/mujer.png" alt="Calzado Deportivo Mujer">
+                <h2>Calzado para Mujer</h2>
+                <p>Descubre nuestra colección de calzado deportivo para mujer. Calidad y confort en cada paso.</p>
+            </a>
         </div>
-        <div class="article">
-            <div class="article_header">
-                <img src="imgs/mujer.png">
-                <h2>Mujer</h2>
-                <hr>
-            </div>
-            <p> Descubre nuestra colección de calzado deportivo para mujer. Calidad y confort en cada
-                paso.</p>
+    
+        <div class="seccion-hombre">
+            <a href="hombre.html">
+                <img src="imgs/hombre.png" alt="Calzado Deportivo Hombre">
+                <h2>Calzado para Hombre</h2>
+                <p>Explora nuestra gama de calzado deportivo para hombre. Diseño y funcionalidad para todas tus actividades.</p>
+            </a>
+        </div>
+    </section>
 
+    <aside>
+        <div class="enlaces">
+            <h2>Enlaces de Interés</h2>
+            <ul>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+            </ul>
         </div>
 
-    </main>
-
+        <div class="publicaciones">
+            <h2>Publicaciones</h2>
+            <ul>
+                <li><a href="#">Publicación 1</a></li>
+                <li><a href="#">Publicación 2</a></li>
+            </ul>
+        </div>
+    </aside>
 
     <footer>
         <p>ESPORNETS - Calzado deportivo de calidad para todos.</p>
     </footer>
-</div>
-
 </body>
 </html>
+
