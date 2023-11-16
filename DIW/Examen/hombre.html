@@ -1,73 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Zapatillas Hombre</title>
+    <title>ESPORNETS - Calzado Deportivo Hombre</title>
 </head>
 <body>
-
-<div id="page">
     <header>
+        <img src="imgs/espornets.png" alt="ESPORNETS Logo">
         <h1>ESPORNETS</h1>
     </header>
 
-    <div id="nav">
+    <nav>
         <ul>
-            <li id="nav_hombre">Hombre</a>
-                <div class="dropdown-content">
-                    <a href="hombre.html">Productos</a>
-                </div>
-            </li>
-            <li id="nav_mujer">Mujer</a>
-                <div class="dropdown-content">
-                    <a href="mujer.html">Productos</a>
-                </div>
+            <li><a href="#productos">Productos</a>
+                <ul>
+                    <li><a href="#productos-hombre">Hombre</a></li>
+                    <li><a href="#productos-mujer">Mujer</a></li>
+                </ul>
             </li>
         </ul>
+    </nav>
+
+    <div class="tabla-hombre">
+        <table>
+            <thead>
+                <tr>
+                    <th>COD_PRODUCTO</th>
+                    <th>DESCRIPCIÓN</th>
+                    <th>TALLAS DISPONIBLES</th>
+                    <th>PVP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ZM-120-RUN</td>
+                    <td>Zapatilla hombre runner</td>
+                    <td>40-46</td>
+                    <td>80€</td>
+                </tr>
+                <tr>
+                    <td>ZM-150-PRO</td>
+                    <td>Zapatilla hombre pronador</td>
+                    <td>40-46</td>
+                    <td>150€</td>
+                </tr>
+                <tr>
+                    <td>ZM-120-SUP</td>
+                    <td>Zapatilla hombre supinador</td>
+                    <td>40-46</td>
+                    <td>150€</td>
+                </tr>
+                <tr>
+                    <td>ZM-120-PRO</td>
+                    <td>Zapatilla hombre profesional</td>
+                    <td>40-46</td>
+                    <td>200€</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
+    <aside>
+        <div class="enlaces">
+            <h2>Enlaces de Interés</h2>
+            <ul>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+            </ul>
+        </div>
 
-    <main>
-        <table class="zapasHombre">
-            <tr>
-                <th>COD_PRODUCTO</th>
-                <th>DESCRIPCIÓN</th>
-                <th>TALLAS DISPONIBLES</th>
-                <th>PVP</th>
-            </tr>
-            <tr>
-                <td>ZH-120-RUN</td>
-                <td>Zapatilla hombre runner</td>
-                <td>40-46</td>
-                <td>80€</td>
-            </tr>
-            <tr>
-                <td>ZH-150-PRO</td>
-                <td>Zapatilla hombre pronador</td>
-                <td>40-46</td>
-                <td>150€</td>
-            </tr>
-            <tr>
-                <td>ZH-120-SUP</td>
-                <td>Zapatilla hombre supinador</td>
-                <td>40-46</td>
-                <td>150€</td>
-            </tr>
-            <tr>
-                <td>ZH-120-PRO</td>
-                <td>Zapatilla hombre profesional</td>
-                <td>40-46</td>
-                <td>200€</td>
-            </tr>
-        </table>
-    </main>
-
+        <div class="publicaciones">
+            <h2>Publicaciones</h2>
+            <ul>
+                <li><a href="#">Publicación 1</a></li>
+                <li><a href="#">Publicación 2</a></li>
+            </ul>
+        </div>
+    </aside>
 
     <footer>
-
+        <p>ESPORNETS - Calzado deportivo de calidad para todos.</p>
     </footer>
-</div>
-
 </body>
 </html>
