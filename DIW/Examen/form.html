@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ESPORNETS - Calzado Deportivo</title>
+</head>
+<body>
+    <header>
+        
+        <img src="imgs/espornets.png" alt="ESPORNETS Logo">
+        <h1>ESPORNETS</h1>
+        
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a>
+            </li>
+
+            <li><a href="#productos">Productos</a>
+                <ul>
+                    <li><a href="hombre.html">Hombre</a></li>
+                    <li><a href="mujer.html">Mujer</a></li>
+                </ul>
+            </li>
+
+            <li><a href="form.html">Pedidos</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div id="page">
+        
+          <form action="procesar_formulario.html" method="post">
+            
+                <label for="nombre">Nombre y apellidos</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Diego Terevinto" autofocus required>
+                <label for="dni">DNI</label>
+                <input type="text" name="dni" id="dni" pattern="[0-9]{8}[A-Za-z]{1}" minlength="9" maxlength="9" placeholder="12345678M" required>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" name="correo" id="correo" placeholder="diego@gmail.com" required>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="602358948" multiple required>
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+                <label for="producto">Producto que quiere comprar</label>
+                <select name="producto" id="producto" required>
+                    <option value="ZM-120-RUN">Zapatilla Mujer Runner</option>
+                    <option value="ZM-150-PRO">Zapatilla Mujer Pronador</option>
+                    <option value="ZM-120-SUP">Zapatilla Mujer Supinador</option>
+                    <option value="ZM-120-PRO">Zapatilla Mujer Profesional</option>
+
+                    <option value="ZH-120-RUN">Zapatilla Hombre Runner</option>
+                    <option value="ZH-150-PRO">Zapatilla Hombre Pronador</option>
+                    <option value="ZH-120-SUP">Zapatilla Hombre Supinador</option>
+                    <option value="ZH-120-PRO">Zapatilla Hombre Profesional</option>
+                </select>
+                <label for="color_caja">Color de la caja de envoltorio de las zapatillas</label>
+                <input type="color" name="color_caja" id="color_caja">
+                <label for="unidades">Número de unidades que quiere comprar</label>
+                <input type="number" name="unidades" id="unidades" required>
+                <input type="submit" value="Enviar">
+           
+            
+          </form>
+    </div>
+
+
+    <footer>
+        <p>ESPORNETS - Calzado deportivo de calidad para todos.</p>
+    </footer>
+
+</body>
+</html>
+

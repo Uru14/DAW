@@ -1,27 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
-}
-
 header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1em;
+    padding: 0.5em;
     width: 100%;
     box-sizing: border-box;
-}
-
-.header-content {
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center; 
 }
-
+header a {
+    text-decoration: none;
+    display: flex;
+}
 header img {
     max-width: 120px; 
     height: auto;
@@ -30,28 +22,55 @@ header img {
 
 header h1 {
     margin: 0; 
+    color: white;
+    align-self: center;
+}
+
+#page {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     background-color: #444;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
-nav a {
+nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #fdfdfd;
+    transition: .5s;
     display: block;
     padding: 1em;
 }
 
+nav ul li a:hover {
+    background-color: #1613b1;
+}
+
 nav ul ul {
     display: none;
+
 }
 
 nav ul li:hover > ul {
@@ -59,36 +78,55 @@ nav ul li:hover > ul {
 }
 
 section {
-    flex: 1;
+    width: 80%;
     padding: 2em;
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-section img {
-    max-width: 100%;
-    height: auto;
+.seccion-mujer, .seccion-hombre {
+    width: 270px;
+    height: 450px;
+    margin: 0 1em;
+}
+section a{
+    text-decoration: none;
+    color: black;
 }
 
 .seccion-mujer, .seccion-hombre {
-    flex: 1;
-    margin: 0 1em;
+    position: relative;
+    overflow: hidden;
+    padding: 4px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; 
+    border: 2px solid transparent; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 
-.producto {
-    border: 1px solid #ddd;
-    padding: 1em;
-    margin-bottom: 1em;
-    text-align: center;
+.seccion-mujer:hover, .seccion-hombre:hover {
+    transform: scale(1.1); 
+    margin-top: 10px;
+    border: 2px solid #ffee10; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
+
+.seccion-mujer img, .seccion-hombre img {
+    max-width: 100%; 
+}
+
 
 aside {
     background-color: #ddd;
     padding: 2em;
     width: 300px; 
+    height: 600px;
     box-sizing: border-box;
-    margin-left: auto;
+    position: absolute;
+    right: 0;
+
 }
 
 footer {
@@ -97,23 +135,96 @@ footer {
     text-align: center;
     padding: 1em;
     width: 100%;
-    box-sizing: border-box;
-    margin-top: auto; 
+
 }
 
-.tabla-mujer table {
+/*-----------------------*/
+
+.tabla-hombre table, .tabla-mujer table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px; 
-}
+    margin: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-.tabla-mujer th, .tabla-mujer td {
+  }
+  
+  .tabla-hombre th,
+  .tabla-hombre td, .tabla-mujer th, .tabla-mujer td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
-}
-
-.tabla-mujer th {
+  }
+  
+  .tabla-hombre th, .tabla-mujer th {
     background-color: #f2f2f2;
+  }
+  
+  .tabla-hombre td, .tabla-mujer td {
+    background-color: #fff;
+  }
+  
+  .tabla-hombre tbody tr:nth-child(even) td {
+    background-color: #f9f9f9;
+  }
+  
+  .tabla-hombre th,
+  .tabla-hombre td , .tabla-mujer th, .tabla-mujer td{
+    transition: background-color 0.3s ease;
+  }
+  
+  .tabla-hombre th:hover,
+  .tabla-hombre td:hover,   .tabla-mujer th:hover,
+  .tabla-mujer td:hover {
+    background-color: rgba(255, 238, 16, 0.3);
+  }
+/*-------------------------*/
+
+
+form {
+    width: 100%;
+    max-width: 550px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+    opacity: 80%;
+    transition: opacity 0.25s linear;
+    box-sizing: border-box;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+
+
+input:hover {
+    opacity: 100%;
+}
+  
+  
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+  
+input[type="submit"]:hover {
+    background-color: #000;
+}
