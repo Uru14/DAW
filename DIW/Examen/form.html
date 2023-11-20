@@ -8,10 +8,10 @@
 </head>
 <body>
     <header>
-        
-        <img src="imgs/espornets.png" alt="ESPORNETS Logo">
-        <h1>ESPORNETS</h1>
-        
+        <a href="index.html">
+            <img src="imgs/espornets.png" alt="ESPORNETS Logo">
+            <h1>ESPORNETS</h1>
+        </a>
     </header>
 
     <nav>
@@ -27,6 +27,13 @@
             </li>
 
             <li><a href="form.html">Pedidos</a>
+            </li>
+            <li><a href="#videos">Vídeos</a>
+                <ul>
+                    <li><a href="video1.html">Vídeo 1</a></li>
+                    <li><a href="video2.html">Vídeo 2</a></li>
+                    <li><a href="video3.html">Vídeo 3</a></li>
+                </ul>
             </li>
         </ul>
 
@@ -62,7 +69,7 @@
                 <input type="color" name="color_caja" id="color_caja">
                 <label for="unidades">Número de unidades que quiere comprar</label>
                 <input type="number" name="unidades" id="unidades" required>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" onclick="animarBoton()">
            
             
           </form>

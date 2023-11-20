@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
 header {
     background-color: #333;
     color: #fff;
@@ -85,7 +88,7 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
+/*
 .seccion-mujer, .seccion-hombre {
     width: 270px;
     height: 450px;
@@ -114,6 +117,41 @@ section a{
 
 
 .seccion-mujer img, .seccion-hombre img {
+    max-width: 100%; 
+}
+*/
+.seccion-mujer,
+.seccion-hombre {
+    width: 270px;
+    height: 450px;
+    margin: 0 1em;
+}
+
+section a {
+    text-decoration: none;
+    color: black;
+}
+
+.seccion-mujer,
+.seccion-hombre {
+    position: relative;
+    overflow: hidden;
+    padding: 4px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; 
+    border: 2px solid transparent; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.seccion-mujer:hover,
+.seccion-hombre:hover {
+    transform: scale(1.1); 
+    margin-top: 10px;
+    border: 2px solid #ffee10; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.seccion-mujer img,
+.seccion-hombre img {
     max-width: 100%; 
 }
 
@@ -189,6 +227,7 @@ form {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Playfair Display', serif;
 }
 
 input,
@@ -227,4 +266,62 @@ input[type="submit"] {
   
 input[type="submit"]:hover {
     background-color: #000;
+}
+
+/*---------------*/
+
+#video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    animation: rotateVideos 1s forwards;
+}
+
+#video-container video {
+    width: 100%;
+    height: auto;
+}
+#btnVideos {
+    padding: 10px;
+    display: block;
+}
+
+#btnVideos input{
+    width: 80px;
+    margin: 0 30px;
+}
+
+
+@keyframes rotateVideos {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*------------------------*/
+
+@keyframes shaker {
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
+}
+  
+.shake {
+    animation-name: shaker;
+    animation-duration: 0.1s;
+    transform-origin: 50% 50%;
+    animation-timing-function: linear;
+    background-color: #c0392b;
+}
+  
+.shake:hover {
+    background-color: #e74c3c;
 }

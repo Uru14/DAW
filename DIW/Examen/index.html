@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/javascript.js"></script>
     <title>ESPORNETS - Calzado Deportivo</title>
 </head>
 <body>
     <header>
-        
-        <img src="imgs/espornets.png" alt="ESPORNETS Logo">
-        <h1>ESPORNETS</h1>
-        
+        <a href="index.html">
+            <img src="imgs/espornets.png" alt="ESPORNETS Logo">
+            <h1>ESPORNETS</h1>
+        </a>
     </header>
 
     <nav>
@@ -28,15 +29,22 @@
 
             <li><a href="form.html">Pedidos</a>
             </li>
+            <li><a href="#videos">Vídeos</a>
+                <ul>
+                    <li><a href="video1.html">Vídeo 1</a></li>
+                    <li><a href="video2.html">Vídeo 2</a></li>
+                    <li><a href="video3.html">Vídeo 3</a></li>
+                </ul>
+            </li>
         </ul>
 
     </nav>
 
     <div id="page">
+        
         <section id="productos">
-
             <div class="seccion-mujer">
-                <a href="mujer.html">
+                <a href="mujer.html" >
                     <div class="imagenProd">
                         <img src="imgs/mujer.png" alt="Calzado Deportivo Mujer">
                     </div>
@@ -46,15 +54,13 @@
                     </div>
                 </a>
             </div>
-            
             <div class="seccion-hombre">
-                <a href="hombre.html">
+                <a href="hombre.html" onclick="expandirSeccion(event, 'hombre')">
                     <img src="imgs/hombre.png" alt="Calzado Deportivo Hombre">
                     <h2>Calzado para Hombre</h2>
                     <p>Explora nuestra gama de calzado deportivo para hombre. Diseño y funcionalidad para todas tus actividades.</p>
                 </a>
             </div>
-            
         </section>
 
         <aside>
