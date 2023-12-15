@@ -4,6 +4,7 @@
     grid-template-rows: 30px 250px 250px 30px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    margin: 20px;
     /*height: 300px;
     width: 60%;
     margin: auto;*/
@@ -33,6 +34,7 @@ li{
         grid-template-rows: 30px 80px 420px 30px;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
+        margin: 10px;
     }
 
     .div1 { grid-area: 1 / 1 / 2 / 6; }
@@ -58,6 +60,7 @@ li{
         grid-template-rows: 30px 80px 420px 30px;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
+        margin: 5px;
     }
 
     .div1 { grid-area: 1 / 1 / 2 / 6; }
