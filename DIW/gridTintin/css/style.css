@@ -130,3 +130,19 @@ ul{
 .div12 { grid-area: 2 / 2 / 3 / 3; }
 .div13 { grid-area: 2 / 3 / 3 / 4; }
 .div14 { grid-area: 3 / 1 / 4 / 2; }
+
+
+@media screen and (max-width: 500px) {
+    #grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .parent2, .parent{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.active {
+    border: 2px solid yellow;
+}
