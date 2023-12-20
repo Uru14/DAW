@@ -91,4 +91,30 @@ div{
         background-color: #494949;
         height: auto !important;
     }
+
+    .menu-link {
+        cursor: pointer;
+    }
+
+    .parent div:nth-child(n+2) {
+        background-color: #d2d2d2;
+    }
+
+    .parent div:nth-child(n+2) {
+        display: none; /* Ocultar los divs 2 al 7 inicialmente */
+    }
+
+    /* Mostrar el menú desplegable al hacer clic en el enlace del menú */
+    .menu-link:hover + div:nth-child(n+2) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 8px;
+    }
+
+    .menu-item {
+        color: #f51111;
+        text-decoration: none;
+        padding: 8px;
+    }
 }
