@@ -1,0 +1,25 @@
+#primero .destacado {
+  /*color: $color1;
+  font-size: 1.6em;
+  text-align: center;
+  padding: 6px;*/
+  color: #ff8000;
+  font-size: 1.6em;
+  padding: 6px;
+  text-align: center;
+}
+
+#segundo .destacado {
+  /*color: $color2;
+  font-size: 1.4em;
+  text-decoration: underline;
+  padding: 6px;*/
+  color: #2e5f64;
+  font-size: 1.4em;
+  padding: 6px;
+  text-decoration: underline;
+}
+
+p:not(.destacado)::first-line {
+  font-style: oblique;
+}/*# sourceMappingURL=styles.css.map */

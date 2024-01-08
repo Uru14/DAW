@@ -1,0 +1,36 @@
+$color1: #ff8000;
+$color2: #2e5f64;
+@mixin fontStyle($color, $fontSize, $padding) {
+        color: $color;
+        font-size: $fontSize;
+        padding: $padding;
+}
+#primero {
+    .destacado {
+        /*color: $color1;
+        font-size: 1.6em;
+        text-align: center;
+        padding: 6px;*/
+        @include fontStyle($color1, 1.6em, 6px);
+        text: {
+            align: center
+        }
+    }
+}
+
+#segundo {
+    .destacado {
+        /*color: $color2;
+        font-size: 1.4em;
+        text-decoration: underline;
+        padding: 6px;*/
+        @include fontStyle($color2, 1.4em, 6px);
+        text: {
+            decoration: underline
+        }
+    }
+}
+
+p:not(.destacado)::first-line {
+    font-style: oblique;
+}
