@@ -1,11 +1,11 @@
 @keyframes iluminar {
   from {
     color: #eee;
-    background-color: #666;
+    background-color: #15a;
   }
   to {
-    color: #fff;
-    background-color: #888;
+    color: white;
+    background-color: #166cd8;
   }
 }
 nav {
@@ -22,11 +22,11 @@ nav > ul {
   width: 100%;
   height: 32px;
   color: #eee;
-  background-color: #666;
+  background-color: #15a;
 }
 nav a {
   color: #eee;
-  background-color: #666;
+  background-color: #15a;
   text-decoration: none;
   width: 160px;
   padding: 7px 20px;
@@ -35,8 +35,8 @@ nav a {
   cursor: pointer;
 }
 nav a:hover {
-  color: #fff;
-  background-color: #888;
+  color: white;
+  background-color: #166cd8;
   animation: iluminar 0.4s linear;
 }
 
@@ -77,10 +77,81 @@ header {
 
 footer {
   color: #eee;
-  background-color: #666;
+  background-color: #15a;
   box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0px;
   padding: 5px;
+}
+
+#contenido .col-left button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+#contenido .col-left input {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #bbb;
+}
+
+#contenido {
+  padding: 30px 20px;
+}
+@media (max-width: 1024px) {
+  #contenido {
+    padding: 10px 20px;
+  }
+}
+#contenido .col-left {
+  /*@extend %input-block;
+  @extend %button-block;*/
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  #contenido .col-left {
+    float: none;
+  }
+}
+@media (max-width: 800px) {
+  #contenido .col-left {
+    width: 100%;
+  }
+}
+#contenido .col-right {
+  box-sizing: border-box;
+  margin-left: 30%;
+  width: 70%;
+  padding: 10px;
+}
+#contenido .col-right h1 {
+  color: #0c3e7c;
+  font-size: 1.6em;
+}
+@media (max-width: 800px) {
+  #contenido .col-right {
+    margin-left: 0;
+  }
+}
+@media (max-width: 800px) {
+  #contenido .col-right {
+    width: 100%;
+  }
+}
+#contenido .button-action {
+  background-color: #15a;
+  color: white;
+}
+#contenido .button-action:hover {
+  background-color: #3686eb;
 }/*# sourceMappingURL=screen.css.map */
