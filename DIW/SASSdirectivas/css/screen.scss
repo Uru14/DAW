@@ -1,11 +1,6 @@
 @import '_mixin.scss';
-
-$text-color: #eee;
-$text-hover-color: lighten($text-color, 10%);
-$bg-color: #15a;
-$bg-hover-color: lighten($bg-color, 10%);
-$colorTitle: darken($bg-color, 10%);
-
+@import '_menu.scss';
+@import '_contenido.scss';
 
 
 
@@ -20,63 +15,6 @@ $colorTitle: darken($bg-color, 10%);
 
 
 
-nav {
-  position: absolute;
-  width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-
-  ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-  }
-
-  > ul {
-    width: 100%;
-    height: 32px;
-    @include color-scheme($text-color, $bg-color);
-  }
-
-  a {
-    @include color-scheme($text-color, $bg-color);
-    text-decoration: none;
-    width: 160px;
-    padding: 7px 20px;
-    display: block;
-    text-align: center;
-    cursor: pointer;
-
-    &:hover {
-      @include color-scheme($text-hover-color, $bg-hover-color);
-      @include animation(iluminar, 0.4s);
-    }
-  }
-}
-
-ul.submenu {
-  position: absolute;
-  height: 0px;
-  overflow: hidden;
-  @include transition(height, 0.5s);
-}
-
-li.categoria {
-  float: left;
-
-  > a {
-    @include transition(padding, 0.4s);
-  }
-
-  &:hover {
-    > a {
-      padding: 10px 20px;
-    }
-
-    ul.submenu {
-      height: 100px;
-    }
-  }
-}
 
 body {
   padding: 0px;
@@ -175,6 +113,15 @@ footer {
     &:hover {
       background-color: lighten($bg-color, 20%);
     }
+  }
+}
+
+header {
+  @if $theme == dark {
+    background-color: #138;
+  } @else if $theme == light {
+    background-color: #ddf;
+    color: #138
   }
 }
 
