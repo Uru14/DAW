@@ -22,6 +22,7 @@
 }
 
 
+//En estos mixins para cada tipo de pantalla, se le pasa  una propiedad (float, width, etc) y el valor deseado.
 @mixin responsiveSmall($property, $value) {
   
   @media (max-width: 800px) {
@@ -37,3 +38,13 @@
   }
 }
 
+@mixin responsiveXSmall($property, $value) {
+  @media (max-width: 550px) {
+    #{$property}: $value;
+  }
+}
+
+
+@function escalaGrises($color) {
+    @return greyscale($color);
+}

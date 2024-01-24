@@ -1,0 +1,144 @@
+@import '_mixin.scss';
+@import '_menu.scss';
+@import '_contenido.scss';
+
+
+
+@keyframes iluminar {
+  from {
+    @include color-scheme($text-color, $bg-color);
+  }
+  to {
+    @include color-scheme($text-hover-color, $bg-hover-color);
+  }
+}
+
+
+//En el body podemos anidar tanto el header como el footer, el nav se encuentra en '_menu.scss'. Así mismo, el anidamiento más importante a descatar es el del font,
+//del cual se usan 4 propiedades.
+
+body {
+  padding: 0px;
+  margin: 0px;
+  header {
+
+    padding: 12px 30px;
+    color: $text-color;
+  
+    font: { //nesting de propiedades
+      size:1.8em;
+      weight: bold;
+      shadow: 1px 1px 2px #aaa;
+      family: Georgia, "Times New Roman", Times, serif;
+    }
+  
+    background: { //Este anidamiento realmente no es necesario al tratarse únicamente de 1 solo atributo, por lo que a partir de ahora este tipo de anidamientos no los haré.
+      color: #eee;
+    }
+
+    @if $theme == dark {
+      background-color: #138;
+    } @else if $theme == light {
+      background-color: #ddf;
+      color: #138
+    }
+
+  
+    
+  } 
+
+  footer {
+    @include color-scheme($text-color, $bg-color);
+    @include box-sizing(border-box);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
+  }
+}
+
+// Los siguientes extends usando placeholder nos facilitan reusar los estilos, de esta forma no repetimos código para todos los botones o inputs.
+// Placeholder para button style
+%button-block {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+// Placeholder para input style
+%input-block {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #bbb;
+}
+
+
+
+#contenido {
+  padding: 30px 20px;
+  width: $anchoTotal;
+  // Diseño responsivo para medium size
+  @include responsiveMedium(padding, 10px 20px);
+
+  .col-left {
+    box-sizing: border-box;
+    width: $anchoTotal - 70; //Uso de operación aritmética de resta. 
+    float: left;
+    padding: 10px;
+
+    // Diseño responsivo para tamaños small
+    @include responsiveSmall(float, none);
+    @include responsiveSmall(width, 100%);
+
+    // Diseño responsiv para tamaños Xsmall
+    @include responsiveXSmall(font-size, 1.5em);
+
+
+    // Uso de extends para estilos de inputs y botones
+    input {
+      @extend %input-block; 
+    }
+
+    button {
+      @extend %button-block;
+    }
+  } 
+
+
+  .col-right {
+    box-sizing: border-box;
+    margin-left: 30%;
+    width: $anchoTotal - 30;
+    padding: 10px;
+
+    
+    h1 {
+      color: $colorTitle;
+      font-size: 1.6em;
+    }
+
+    // Diseño responsivo para tamaños small
+    @include responsiveSmall(margin-left, 0);
+    @include responsiveSmall(width, 100%);
+    // Diseño responsivo para tamaños Xsmall
+    @include responsiveXSmall(font-size, 1.5em);
+
+  }
+
+  .button-action {
+    background-color: $bg-color;
+    color: white;
+
+    &:hover { //Mediante la función 'escalaGrises($color)' al hacer hover por el botón 'Entrar' el color de fondo se convierte en escala de grises 
+      //background-color: lighten($bg-color, 20%);
+      background-color: escalaGrises($bg-color);
+
+    }
+  }
+}
+

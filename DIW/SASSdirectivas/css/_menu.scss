@@ -6,7 +6,11 @@ $bg-color: #15a;
 $bg-hover-color: lighten($bg-color, 10%);
 $colorTitle: darken($bg-color, 10%);
 $theme: dark;
+$anchoTotal: 100%;
 
+
+// Como se puede ver, se intenta no hacer anidaciones de más de 4 niveles porque si no puede llegar a generar más confusión que organización.
+// En el siguiente código, si anidara a un nivel más ya sería muy dificil de diferencias a que se está haciendo referencia
 nav{
     &#desktop{
         position: absolute;
