@@ -1,0 +1,42 @@
+
+.row {
+    padding: 5px;
+}
+
+.green_col div{
+    background-color: #2afd31;
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+}
+
+.blue_col {
+    background-color: #8aa9d7;
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+}
+.blue2_col div{
+    background-color: #2dfdfc;
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+}
+.orange_col div{
+    background-color: #fc995e;
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.grey_col div{
+    background-color: #cbcbcd;
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+}
+
+.offset-md-right-3{
+    margin-right: 25%;
+}

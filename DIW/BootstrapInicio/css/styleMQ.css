@@ -1,0 +1,66 @@
+
+.row {
+    padding: 5px;
+}
+
+.green_col div{
+    background-color: #2afd31;
+    border: 1px solid;
+    text-align: left;
+    padding: 5px;
+}
+
+.yellow_col div{
+    background-color: #fdfb39;
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.red_col div{
+    background-color: #ff0000;
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+
+@media(max-width: 768px) {
+    .col3 {
+        background-color: green;
+    }
+    .col2 {
+        text-align: right;
+    }
+    .col1 {
+        text-align: left;
+    }
+    .header {
+        background-color: #27fdf8;
+        text-align: center;
+    }
+}
+
+@media(width <= 576px) {
+    .col2 {
+        background-color: #2dfdfc;
+        text-align: center;
+    }
+    .col1 {
+        text-align: left;
+    }
+    .col3{
+        text-align: right;
+    }
+    .header {
+        background-color: #fdb180;
+        text-align: center;
+    }
+}
+
+
+
