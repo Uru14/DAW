@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/styleForm.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-y3zFz+6JCqToLXz5k3fviyjSmAboIX8VaUx/BeX4DzqzqqiA/2sbw1C1OCmI/PDw" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-MzYeIJvqJqZNOGKFhD0WdcWhlNU3i/CAqU7qxb5aivvf3yioDfw5yuo8UWHdlyDv" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="mb-4">Formulario de Pedido</h2>
+    <form>
+        <div class="row mb-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Apellido Paterno" aria-label="Apellido Paterno" required>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Apellido Materno" aria-label="Apellido Materno" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico" required>
+        </div>
+        <div class="mb-3">
+            <select class="form-select" multiple aria-label="Producto(s) que desea comprar" required>
+                <option selected>Seleccione Producto(s)</option>
+                <option value="zapatillas">Zapatillas</option>
+                <option value="zapatos">Zapatos</option>
+                <option value="sandalias">Sandalias</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <input type="color" class="form-control form-control-color" id="color" value="#ffffff" title="Color de la caja de envoltorio de las zapatillas" required>
+        </div>
+        <div class="mb-3">
+            <input type="range" class="form-range" min="1" max="10" id="unidades" required>
+        </div>
+        <div class="mb-3">
+            <input type="file" class="form-control" id="datosContacto" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+</body>
+</html>
