@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es" >
+  <head>
+    <title>Examen Bootstrap 5</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/styles2.css">
+    
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!--<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />-->
+  </head>
+
+  <body>
+    
+    <main>
+        <div class="container ">
+            <div class="row " > <!-- ROW DONDE VA EL HEADER Y EL NAVBAR-->
+                <div class="col-12 col-md-6 col-lg-12 bg-dark" data-bs-theme="dark" > <!-- COLUMNA PARA EL HEADER-->
+                  <!--LOGO-->
+                  <img src="./imgs/logo.png" class="imagenLogo" style="float: left; margin: 20px;">
+                  <!--TITULO-->
+                  <h1 style="color: white;">BIPAI</h1>
+                  <br>
+                  <!--BOTONES-->
+                  <div class="btn-group btn-group-sm d-none d-sm-block" role="group" aria-label="Button group with nested dropdown" > 
+                    <a type="button" class="btn btn-dark" href="#scrollspyBicis" style="border-color: white;">Bicicletas</a>
+                    <a type="button" class="btn btn-dark" href="#scrollspyAccesorios" style="border-color: white;">Accesorios</a>
+                    <a type="button" class="btn btn-dark" href="#scrollspyComponentes" style="border-color: white;">Componentes</a>
+                  </div>
+                </div>
+                <!--NAVBAR-->
+                <div class="col-md ">
+                  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                    <div class="container-fluid">
+                      
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <a class="navbar-brand" href="#">Inicio</a>
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#scrollspyBicis">Bicicletas</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyAccesorios">Accesorios</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyComponentes">Componentes</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Sillines</a></li>
+                              <li><a class="dropdown-item" href="#">Cascos</a></li>
+                              <li><a class="dropdown-item" href="#">Tijas</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+            </div>
+            <!--ROW PARA EL CONTENIDO CENTRAL (MAIN, SIDEBAR Y ARTICLES)-->
+            <div class="row">
+              <!--SIDEBAR-->
+              <div class="col order-md-last">
+                <h2>TOP VENTAS 2023</h2>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                    <label class="form-check-label" for="firstCheckbox">GIANT</label>
+                    <span class="badge text-bg-warning rounded-pill">1º</span>
+
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                    <label class="form-check-label" for="secondCheckbox">TREK</label>
+                    <span class="badge text-bg-secondary rounded-pill">2º</span>
+
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                    <label class="form-check-label" for="thirdCheckbox">SPECIALIZED</label>
+                    <span class="badge text-bg-primary rounded-pill">3º</span>
+
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                    <label class="form-check-label" for="thirdCheckbox">CANNONDALE</label>
+                    <span class="badge text-bg-success rounded-pill">4º</span>
+
+                  </li>
+                </ul>
+              </div>
+              <!--CONTENIDO CENTRAL IZQUIERDA-->
+              <div class="col-12 col-md-10 col-lg-8">
+                
+                <div class="row">
+                  <!--MAIN-->
+                  <div class="col-12">
+                    <div class="row">
+                      <!--CARROUSEL-->
+                      <div class="col-12">
+                        <div id="carouselExampleCaptions" class="carousel carousel-dark slide">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./imgs/accesorios.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5>Accesorio</h5>
+                                <p>Este es un accesorio muy útil</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./imgs/componentes.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5>Componentes</h5>
+                                <p>Estos son todos los componentes</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./imgs/orbea.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5>Orbea</h5>
+                                <p>Esto es la orbea</p>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                  
+                    </div>
+                    
+                  </div>
+                  <!--ARTICLES-->
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-12 col-lg-3 order-md-last">
+                        <div class="card" style="width: 14rem;">
+                          <img src="./imgs/orbea.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title" id="scrollspyBicis">Bicicletas</h5>
+                            <p class="card-text">Accede a nuestra sección de bicicletas donde podrás encontrar las mejores de esta termporada.</p>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 ">
+                        <div class="card" style="width: 14rem;">
+                          <img src="./imgs/componentes.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title" id="scrollspyComponentes">Componentes</h5>
+                            <p class="card-text">Accede a nuestra sección de componentes donde no te faltará ningún componente.</p>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-3 order-md-1">
+                        <div class="card" style="width: 14rem;">
+                          <img src="./imgs/accesorios.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title" id="scrollspyAccesorios">Accesorios</h5>
+                            <p class="card-text">Accede a nuestra sección de accesorios para bicicletas donde podrás encontrar lo último del mercado.</p>
+                            
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="row">
+              <div class="d-none d-md-block text-center p-3">
+                © Diego Terevinto Charquero:
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  COPYRIGHT
+                </button>
+              
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    Esta página es propiedad de Diego Terevinto Charquero
+                  </div>
+                </div>
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Nueva Web" data-bs-content="¡En construcción!">NUEVA WEB</button>
+              </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+      })
+  </script>
+  <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>n -->
+    
+  </body>
+</html>
